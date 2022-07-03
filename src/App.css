@@ -258,7 +258,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 3em;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -306,6 +306,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+/**
+ABOUT BANNER CSS
+*/
+#about-banner {
+  margin-top: 0;
+  padding: 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#about-banner #slide {
+  margin-top: 0;
+  padding: 50px 0 100px 0;
 }
 
 /************ Skills Css ************/

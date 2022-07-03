@@ -49,12 +49,10 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">
-                            Welcome to my WorkHub/Portfolio!
+                            Welcome to my Portfolio!
                         </span>
-                        <h1>{`My name is Anthony Rodriguez `}
+                        <h1>{`My name is Anthony Rodriguez: \n`}
                         <span className="wrap">{type}</span>
-                        <p>ABOUT ME</p>
-                        <button onClick={()=> console.log('connect')}>LETS CONNECT </button>
                         </h1>
                     </Col>
                     <Col xs={12} md={6} xl={5} >

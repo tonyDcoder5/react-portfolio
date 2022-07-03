@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {HeaderNav} from './components/HeaderNav';
 import { Banner } from './components/Banner'
+import { About } from './components/About'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <HeaderNav />
       <Banner />
+      <About />
     <footer>
     <a href='https://www.freepik.com/vectors/japanese-cloud'>Japanese cloud vector created by rawpixel.com - www.freepik.com</a>
     </footer>
