@@ -52,6 +52,7 @@ export const Banner = () => {
                             Welcome to my Portfolio!
                         </span>
                         <h1>{`My name is Anthony Rodriguez: \n`}
+                        <br />
                         <span className="wrap">{type}</span>
                         </h1>
                     </Col>
@@ -59,7 +60,6 @@ export const Banner = () => {
                         <img src={bannerImg} alt="Header Img" />
                     </Col>
                 </Row>
-
             </Container>
 
         </section>

@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import {HeaderNav} from './components/HeaderNav';
-import { Banner } from './components/Banner'
+import { Header } from './components/Header';
 import { About } from './components/About'
+import { Projects } from './components/Projects';
+import { References } from './components/References';
+import { ContactMe } from './components/ContactMe';
+import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
@@ -17,12 +20,16 @@ TODOS
 function App() {
   return (
     <div className="App">
-      <HeaderNav />
-      <Banner />
+      <Header />
       <About />
-    <footer>
-    <a href='https://www.freepik.com/vectors/japanese-cloud'>Japanese cloud vector created by rawpixel.com - www.freepik.com</a>
-    </footer>
+      <br />
+      <Projects />
+      <br />
+      <References />
+      <br />
+      <ContactMe />
+      <br />
+      <Footer />
     </div>
 
   );

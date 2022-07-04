@@ -1,17 +1,17 @@
-import {Card} from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 export const ECard = () => {
-    return (
-        <Card className="bg-dark text-white">
-        <Card.Img src="" alt="Card image" />
-        <Card.ImgOverlay>
-          <Card.Title>ECard title</Card.Title>
+  return (
+    <>
+      <Card>
+        <Card.Img variant="right" src="holder.js/100px180" />
+        <Card.Body>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
           </Card.Text>
-          <Card.Text>Last updated 3 mins ago</Card.Text>
-        </Card.ImgOverlay>
+        </Card.Body>
       </Card>
-    )
-}
+    </>
+  );
+};

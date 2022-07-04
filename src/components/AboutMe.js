@@ -1,17 +1,18 @@
 import { Card, Button } from "react-bootstrap";
+import {aboutImg} from "../assets/img/aboutMepic.png"
 
 export const AboutMe = () => {
   return (
-    <Card className="bg-dark text-white">
-      <Card.Img src="" alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title>About Me Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </Card>
+<>
+  <Card>
+    <Card.Img variant="right" src="holder.js/100px180" />
+    <Card.Body>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+</>
   );
 };

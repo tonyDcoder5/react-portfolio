@@ -2,36 +2,43 @@ import { Carousel } from "react-bootstrap";
 import {AboutMe} from "./AboutMe";
 import {Skills} from "./Skills";
 import {ECard} from "./ECard";
+import {useState} from "react";
 
 export const About = () => {
+
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    };
+  
+
   return (
-    <Carousel id="about-banner" fade>
+    <Carousel id="about-banner" fade activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item id="slide">
-        <div>
+        <div className="container">
           <AboutMe />
         </div>
         <Carousel.Caption>
           <h3>About slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>Card with image and short bio of my story and what I can provide </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item id="slide">
-        <div>
-          <Skills />
+      <div className="container">          <Skills />
         </div>
         <Carousel.Caption>
           <h3>Skills slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Grid of skills and level of expertise in each</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item id="slide">
-        <div>
-          <ECard />
+      <div className="container">          <ECard />
         </div>
         <Carousel.Caption>
-          <h3>Contact slide label</h3>
+          <h3>ECard slide label</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Includes links to resume, contact page, and linktree
           </p>
         </Carousel.Caption>
       </Carousel.Item>
