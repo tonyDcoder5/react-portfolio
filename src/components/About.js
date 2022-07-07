@@ -16,15 +16,11 @@ export const About = () => {
   return (
     <Carousel id="about-banner" fade activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item id="slide">
-        <div className="container">
+        <div className="container skill skill-bx">
           <AboutMe />
         </div>
-        <Carousel.Caption>
-          <h3>About slide label</h3>
-          <p>Card with image and short bio of my story and what I can provide </p>
-        </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item id="slide">
+      {/* <Carousel.Item id="slide">
       <div className="container">          <Skills />
         </div>
         <Carousel.Caption>
@@ -41,7 +37,7 @@ export const About = () => {
             Includes links to resume, contact page, and linktree
           </p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel>
   );
 };
