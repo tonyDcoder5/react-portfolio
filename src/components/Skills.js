@@ -1,14 +1,26 @@
 import { Card } from "react-bootstrap";
 
+/*
+TODO:
+- create graph visual with dev skills charted 
+- look into animating the data? 
+
+*/
+
 export const Skills = () => {
   return (
     <>
       <Card>
-        <Card.Img variant="right" src="holder.js/100px180" />
         <Card.Body>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Graph or visual layout of my skills and level of expertise/mastery for each:
+            HTML
+            CSS
+            JavaScript
+            React
+            Node
+            Git
+            etc.
           </Card.Text>
         </Card.Body>
       </Card>

@@ -4,6 +4,13 @@ import {Skills} from "./Skills";
 import {ECard} from "./ECard";
 import {useState} from "react";
 
+/*
+  TODO:
+  - fix carasoul auto scroll to be fixed and only move on user click
+  - add content
+  - add border rules and spacing for arrows 
+*/
+
 export const About = () => {
 
     const [index, setIndex] = useState(0);
@@ -16,28 +23,20 @@ export const About = () => {
   return (
     <Carousel id="about-banner" fade activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item id="slide">
-        <div className="container skill skill-bx">
+        <div id="about" className="container skill skill-bx">
           <AboutMe />
         </div>
       </Carousel.Item>
-      {/* <Carousel.Item id="slide">
-      <div className="container">          <Skills />
+      <Carousel.Item id="slide">
+      <div className="container skill skill-bx">   
+      <Skills />
         </div>
-        <Carousel.Caption>
-          <h3>Skills slide label</h3>
-          <p>Grid of skills and level of expertise in each</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item id="slide">
-      <div className="container">          <ECard />
+      <div className="container skill skill-bx">       
+      <ECard />
         </div>
-        <Carousel.Caption>
-          <h3>ECard slide label</h3>
-          <p>
-            Includes links to resume, contact page, and linktree
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item> */}
+      </Carousel.Item>
     </Carousel>
   );
 };

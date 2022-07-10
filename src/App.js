@@ -9,11 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 /*
 TODOS 
-- ADD GITHUB LINK TO HEADNAV
 - ADD FLOATING SIDE NAV
-- CHANGE BG IMG AND TAGELINE STYLES
 - ADD SHORT BIO/ABOUT ME 
 - ADD PERSONAL HEADER IMAGE & LOGO
+- add router to fade scroll through different sects of the page
 */
 
 function App() {

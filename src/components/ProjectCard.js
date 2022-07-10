@@ -1,10 +1,18 @@
 import {Card, ListGroup, ListGroupItem} from 'react-bootstrap';
 
-export const ProjectCard = (project) => {
+/*
+TODO:
+  - adjust spacing rules and text-font-alignment-colors
+  - add images of project screenshots as preview
+  - make links into aesthetic icons
+
+*/
+
+export const ProjectCard = ({project}) => {
   return (
     <div>
       <Card style={{ width: "14em" }}>
-        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+        <Card.Img variant="top" src={project.img} />
         <Card.Body>
           <Card.Title>Project Title</Card.Title>
           <Card.Text>
@@ -15,11 +23,11 @@ export const ProjectCard = (project) => {
         <ListGroup className="list-group-flush">
           <ListGroupItem>{project.title}</ListGroupItem>
           <ListGroupItem>{project.desc}</ListGroupItem>
-          <ListGroupItem>Skills Used</ListGroupItem>
+          <ListGroupItem>{project.skills}</ListGroupItem>
         </ListGroup>
         <Card.Body>
-          <Card.Link href="#">demo Link</Card.Link>
-          <Card.Link href="#">github Link</Card.Link>
+          <Card.Link href={project.demo} target="_blank">demo Link</Card.Link>
+          <Card.Link href={project.github} target="_blank">github Link</Card.Link>
         </Card.Body>
       </Card>
     </div>

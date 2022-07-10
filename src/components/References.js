@@ -23,6 +23,13 @@ let exRefArr = [
   },
 ];
 
+/*
+TODO:
+  - adjust spacing, border, and text rules for more aesthetic look
+  - add content from an int datatable refArr
+
+*/
+
 export const References = () => {
   const [index, setIndex] = useState(0);
 

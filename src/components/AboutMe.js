@@ -5,11 +5,10 @@ export const AboutMe = () => {
   return (
 <>
   <Card>
-    <Card.Img variant="right" src="holder.js/100px180" />
+    {/* <Card.Img variant="right" src="../assets/img/aboutMepic.png" /> */}
     <Card.Body>
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Short bio about my passions, interests, and skills and how they will help me provide the best value. professional headshot to the side of text 
       </Card.Text>
     </Card.Body>
   </Card>

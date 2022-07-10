@@ -1,8 +1,19 @@
 import {Form, Row, Col, Button} from 'react-bootstrap';
 
+/*
+TODO:
+  - adjust spacing rules and text-font-alignment-colors
+    - center text
+    - center button
+    - turn form into a card on the side
+  - add border rules to make more aesthetically pleasing
+  - add a carousel of recent posts/images
+
+*/
+
 export const ContactMe = () => {
   return (
-    <div className="container">
+    <div id="contact" className="container">
       <Form>
         <Row>
             <h2>Let's Connect!</h2>

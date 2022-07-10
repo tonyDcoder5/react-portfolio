@@ -2,11 +2,16 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import bannerImg from '../assets/img/header-img.png';
 
+/*
+TODO:
+    - fix delete bug that causes page to shift whenever text is deleted
+    - find better banner img
+*/
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [eraseTitle, setEraseTitle] = useState(false);
-    const titleRotate = ["Web Designer", "Software Developer", "Learner", "Adventurer"];
+    const titleRotate = ["Web Designer", "Software Dev", "Learner", "Adventurer"];
     const [type, setType] = useState('');
     const [delta, setDelta] = useState(250 - Math.random() * 100);
     const period = 400;
@@ -39,7 +44,7 @@ export const Banner = () => {
         else if(eraseTitle && updatedText===''){
             setEraseTitle(false);
             setLoopNum(loopNum + 1);
-            setDelta(250);
+            setDelta(200);
         }
     }
 
@@ -51,7 +56,7 @@ export const Banner = () => {
                         <span className="tagline">
                             Welcome to my Portfolio!
                         </span>
-                        <h1>{`My name is Anthony Rodriguez: \n`}
+                        <h1>{`My name is Anthony Rodriguez: \n `}
                         <br />
                         <span className="wrap">{type}</span>
                         </h1>
