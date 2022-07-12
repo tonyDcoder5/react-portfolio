@@ -10,7 +10,9 @@ TODO:
 export const ECard = () => {
   return (
     <>
-      <Card>
+      <div><h2>ECard</h2></div>
+      <Card className="bg-dark text-white">
+      <div className="ecard-container">
         {/* <Card.Img variant="right" src="holder.js/100px180" /> */}
         <Card.Body>
           <Card.Text>
@@ -18,6 +20,7 @@ export const ECard = () => {
             Resume, Contact Me form, Social Media LinkTree
           </Card.Text>
         </Card.Body>
+        </div>
       </Card>
     </>
   );

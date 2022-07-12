@@ -13,7 +13,10 @@ TODO:
 
 export const ContactMe = () => {
   return (
-    <div id="contact" className="container">
+  <div className="contact contact-bx">
+    <div className="container" id="heading">
+      <h2>Contact Form</h2>
+      </div>    
       <Form>
         <Row>
             <h2>Let's Connect!</h2>
@@ -46,7 +49,10 @@ export const ContactMe = () => {
         </Row>
 
         <Form.Group className="mb-3" id="formGridCheckbox">
-          <Form.Check type="checkbox" label="Check to subscribe for updates" />
+          <div style={{width: "1px"}}>
+          <Form.Check 
+           type="checkbox" label="Check to subscribe for updates" />
+          </div>
         </Form.Group>
 
         <Button variant="primary" type="submit">

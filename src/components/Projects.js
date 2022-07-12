@@ -5,7 +5,7 @@ const exProjectsArr = [
   {
     id: 1,
     title: "WeLoveMovies WebApp",
-    img: "../assets/img/weLoveMovies_preview.png",
+    img: `../assets/img/weLoveMovies_preview.png`,
     desc: "short example desc",
     skills: ["HTML ", "CSS ", "React "],
     demo: "https://welovemovies-ar-front.herokuapp.com/",
@@ -14,7 +14,7 @@ const exProjectsArr = [
   {
     id: 2,
     title: "Decoder/Encoder Ring",
-    img: "",
+    img: `../assets/img/header-img.png`,
     desc: "short example desc",
     skills: ["HTML", "CSS", "React"],
     demo: "https://tonydcoder5.github.io/decoderRing/",
@@ -23,7 +23,7 @@ const exProjectsArr = [
   {
     id: 3,
     title: "Restaurant Reservation App",
-    img: "",
+    img: `../assets/img/header-img.png`,
     desc: "short example desc",
     skills: ["HTML", "CSS", "React"],
     demo: "#",
@@ -32,7 +32,7 @@ const exProjectsArr = [
     {
     id: 4,
     title: "EXAMPLE PROJECT",
-    img: "EXAMPLE IMG",
+    img: `../assets/img/header-img.png`,
     desc: "short example desc",
     skills: ["HTML ", "CSS ", "React "],
     demo: "#",
@@ -41,7 +41,7 @@ const exProjectsArr = [
   {
     id: 5,
     title: "EXAMPLE PROJECT",
-    img: "EXAMPLE IMG",
+    img: `../assets/img/header-img.png`,
     desc: "short example desc",
     skills: ["HTML ", "CSS ", "React "],
     demo: "#",
@@ -59,10 +59,15 @@ TODO:
 
 export const Projects = () => {
   return (
-    <div id="projects" className="container">
+    <>
+      <div className="container" id="heading">
+        <h2>Project Board</h2>
+      </div>
+      <div id="projects" className="container">
       <CardGroup>
         {exProjectsArr.map((project)=> <ProjectCard project={project} /> )}
       </CardGroup>
     </div>
+    </>
   );
 };

@@ -50,6 +50,10 @@ export const References = () => {
   })
 
   return (
+    <>
+    <div className="container" id="heading">
+      <h2>References</h2>
+      </div>
     <Carousel
       id="references-banner"
       fade
@@ -58,5 +62,6 @@ export const References = () => {
     >
     {refArr} 
     </Carousel>
+    </>
   );
 };

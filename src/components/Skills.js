@@ -10,7 +10,9 @@ TODO:
 export const Skills = () => {
   return (
     <>
-      <Card>
+      <div><h2>Skills</h2></div>
+      <Card className="bg-dark text-white">
+      <div className="skills-container">
         <Card.Body>
           <Card.Text>
             Graph or visual layout of my skills and level of expertise/mastery for each:
@@ -23,6 +25,7 @@ export const Skills = () => {
             etc.
           </Card.Text>
         </Card.Body>
+        </div>
       </Card>
     </>
   );

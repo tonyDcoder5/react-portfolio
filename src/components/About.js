@@ -1,8 +1,8 @@
 import { Carousel } from "react-bootstrap";
-import {AboutMe} from "./AboutMe";
-import {Skills} from "./Skills";
-import {ECard} from "./ECard";
-import {useState} from "react";
+import { AboutMe } from "./AboutMe";
+import { Skills } from "./Skills";
+import { ECard } from "./ECard";
+import { useState } from "react";
 
 /*
   TODO:
@@ -12,31 +12,36 @@ import {useState} from "react";
 */
 
 export const About = () => {
+  const [index, setIndex] = useState(0);
 
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-    };
-  
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
 
   return (
-    <Carousel id="about-banner" fade activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item id="slide">
-        <div id="about" className="container skill skill-bx">
-          <AboutMe />
-        </div>
-      </Carousel.Item>
-      <Carousel.Item id="slide">
-      <div className="container skill skill-bx">   
-      <Skills />
-        </div>
-      </Carousel.Item>
-      <Carousel.Item id="slide">
-      <div className="container skill skill-bx">       
-      <ECard />
-        </div>
-      </Carousel.Item>
-    </Carousel>
+    <div className="about about-bx">
+      <Carousel
+        id="about about-banner"
+        fade
+        activeIndex={index}
+        onSelect={handleSelect}
+      >
+        <Carousel.Item id="slide">
+          <div>
+            <AboutMe />
+          </div>
+        </Carousel.Item>
+        <Carousel.Item id="slide">
+          <div>
+            <Skills />
+          </div>
+        </Carousel.Item>
+        <Carousel.Item id="slide">
+          <div >
+            <ECard />
+          </div>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 };

@@ -8,7 +8,7 @@ TODO:
 
 */
 
-export const ProjectCard = ({project}) => {
+export const ProjectCard = ({project}) => { 
   return (
     <div>
       <Card style={{ width: "14em" }}>
