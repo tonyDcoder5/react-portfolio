@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.6e76eee3.css",
-    "main.js": "/react-portfolio/static/js/main.ba6063ef.js",
+    "main.css": "/react-portfolio/static/css/main.c746bddd.css",
+    "main.js": "/react-portfolio/static/js/main.b744f9ae.js",
     "static/js/787.37faa4c4.chunk.js": "/react-portfolio/static/js/787.37faa4c4.chunk.js",
     "static/media/banner-bg.png": "/react-portfolio/static/media/banner-bg.ebd8801234a814a86bdc.png",
-    "static/media/aboutMepic.png": "/react-portfolio/static/media/aboutMepic.cc853c5cf43c2dd056ea.png",
+    "static/media/personal-pic.png": "/react-portfolio/static/media/personal-pic.be7aedc649f477d61d25.png",
     "static/media/CentraNo2-Bold.ttf": "/react-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/react-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/react-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -16,12 +16,12 @@
     "index.html": "/react-portfolio/index.html",
     "static/media/nav-icon1.svg": "/react-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/react-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.6e76eee3.css.map": "/react-portfolio/static/css/main.6e76eee3.css.map",
-    "main.ba6063ef.js.map": "/react-portfolio/static/js/main.ba6063ef.js.map",
+    "main.c746bddd.css.map": "/react-portfolio/static/css/main.c746bddd.css.map",
+    "main.b744f9ae.js.map": "/react-portfolio/static/js/main.b744f9ae.js.map",
     "787.37faa4c4.chunk.js.map": "/react-portfolio/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e76eee3.css",
-    "static/js/main.ba6063ef.js"
+    "static/css/main.c746bddd.css",
+    "static/js/main.b744f9ae.js"
   ]
 }
