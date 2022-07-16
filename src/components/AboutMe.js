@@ -1,23 +1,31 @@
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 
 export const AboutMe = () => {
   return (
 <>
-  <div><h2>About Me</h2></div>
-  <Card className="bg-dark text-white">    
-  <div className="about-container">
-  <Card.Img variant="right" src={require("../assets/img/personal-pic.png")} />
-
-  <Card.ImgOverlay>
+<div className="container about-container">
+  <Card>
     <Card.Body>
       <Card.Text>
-        Short bio about my passions, interests, and skills and how they will help me provide the best value. professional headshot to the side of text 
+        <h2 className="mt-2">About Me</h2>
+        <p className="p-3">
+          After graduating in 2017 from the USF College of Business, 
+          I transitioned between various industries looking for my 
+          place in the world. At each position I found myself analyzing the technology used, imagining ways I could improve the way the technology can be used if I had the skill. 
+          </p>
+      </Card.Text>
+      <Card.Img className="p-3" src={require("../assets/img/personal-pic.png")} />
+      <Card.Text className="mt-3">
+      <p className="p-3">
+          And so I took on Thinkful's Engineering Immersion bootcamp
+          to hone the skills I had been introduced to in my 
+          undergraduate coursework. With the skills I have built
+          over the last year, I hope to continue improving my skills to provide the best service I can as a growing Web Developer. 
+        </p>
       </Card.Text>
     </Card.Body>
-    </Card.ImgOverlay>
-    </div>
   </Card>
-</>
+</div></>
   );
 };

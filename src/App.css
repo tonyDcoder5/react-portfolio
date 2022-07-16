@@ -261,7 +261,6 @@ img.logo:hover {
 
 /************ Banner Css ************/
 
-/* TODO: CHANGE BANNER IMAGE  & TAGLINE STYLES Line 235 */
 .banner {
   margin-top: 0;
   padding: 260px 0 200px 0;
@@ -363,7 +362,7 @@ ABOUT BANNER CSS
   margin-bottom: 25px;
 }
 
-/*** About CSS ***/
+/*** About Section CSS ***/
 .about {
   padding: 50px 0 0 0;
   position: relative;
@@ -377,7 +376,7 @@ ABOUT BANNER CSS
 }
 .about-container{
   padding: auto;
-  margin: 50px 0 50px 0;
+  margin: 50px 20px 50px 20px;
 
 }
 .skills-container{
@@ -388,7 +387,23 @@ ABOUT BANNER CSS
 .ecard-container{
   padding: auto;
   margin: auto;
-  
+  display: grid;
+}
+
+.resume-container{
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  margin: 0px 15px 15px 0px;
+  padding: 1em;
+  border-radius: 20px;
+}
+
+.resume-img{
+  width: auto;
+
+}
+
+.contact-container{
+  margin-top: 25px;
 }
 
 /************ Projects Css ************/

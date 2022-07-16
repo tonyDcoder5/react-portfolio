@@ -3,6 +3,7 @@ import { AboutMe } from "./AboutMe";
 import { Skills } from "./Skills";
 import { ECard } from "./ECard";
 import { useState } from "react";
+import { Tab, Row, Col, ListGroup } from "react-bootstrap";
 
 /*
   TODO:
@@ -19,8 +20,37 @@ export const About = () => {
   };
 
   return (
-    <div className="about about-bx">
-      <Carousel
+    <div className="container about about-bx">
+      <Tab.Container defaultActiveKey="#aboutMe">
+        <Row>
+          <ListGroup>
+            <ListGroup.Item action href="#aboutMe">
+              About Me
+            </ListGroup.Item>
+            <ListGroup.Item action href="#skills">
+              Skills
+            </ListGroup.Item>
+            <ListGroup.Item action href="#eCard">
+              ECard
+            </ListGroup.Item>
+          </ListGroup>
+        </Row>
+        <Row>
+          <Tab.Content>
+            <Tab.Pane eventKey="#aboutMe">
+              <AboutMe />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#skills">
+              <Skills />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#eCard">
+              <ECard />
+            </Tab.Pane>
+          </Tab.Content>
+        </Row>
+      </Tab.Container>
+
+      {/* <Carousel
         id="about about-banner"
         fade
         activeIndex={index}
@@ -41,7 +71,7 @@ export const About = () => {
             <ECard />
           </div>
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 };

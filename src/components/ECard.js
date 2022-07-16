@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 /*
 TODO:
@@ -10,18 +10,38 @@ TODO:
 export const ECard = () => {
   return (
     <>
-      <div><h2>ECard</h2></div>
-      <Card className="bg-dark text-white">
-      <div className="ecard-container">
-        {/* <Card.Img variant="right" src="holder.js/100px180" /> */}
-        <Card.Body>
-          <Card.Text>
-            ECard/Quick contact card with links to:
-            Resume, Contact Me form, Social Media LinkTree
-          </Card.Text>
-        </Card.Body>
-        </div>
-      </Card>
+      <div className="container ecard-container">
+        <Card className="bg-dark text-white p-3 mt-5">
+          <Card.Body>
+            <Container>
+              <Row>
+                <Col>
+                  <div className="container resume-container">
+                    <a
+                      target="_blank"
+                      href="https://docs.google.com/document/d/1i2HYPzJTr9496xp7_DOp_uVrn5sxxqeqnToLQ_w1GkU/edit?usp=sharing"
+                    >
+                      <img
+                        src={require("../assets/img/resume-preview.png")}
+                        alt="resume-preview"
+                      />
+                    </a>
+                 
+                  </div>
+                  <h3>Resume</h3>
+                    <p>Click image for Google Docs preview</p>
+                </Col>
+                <Col>
+                  <Card.Text>
+                    ECard/Quick contact card with links to: Resume, Contact Me
+                    form, Social Media LinkTree
+                  </Card.Text>
+                </Col>
+              </Row>
+            </Container>
+          </Card.Body>
+        </Card>
+      </div>
     </>
   );
 };
