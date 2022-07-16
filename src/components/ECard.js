@@ -22,20 +22,22 @@ export const ECard = () => {
                       href="https://docs.google.com/document/d/1i2HYPzJTr9496xp7_DOp_uVrn5sxxqeqnToLQ_w1GkU/edit?usp=sharing"
                     >
                       <img
+                        className="resume-img"
                         src={require("../assets/img/resume-preview.png")}
                         alt="resume-preview"
                       />
                     </a>
-                 
                   </div>
                   <h3>Resume</h3>
                     <p>Click image for Google Docs preview</p>
                 </Col>
                 <Col>
+                <div className="contact-container">
                   <Card.Text>
                     ECard/Quick contact card with links to: Resume, Contact Me
                     form, Social Media LinkTree
                   </Card.Text>
+                  </div>
                 </Col>
               </Row>
             </Container>
