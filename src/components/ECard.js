@@ -1,4 +1,8 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/nav-icon4.png';
 
 /*
 TODO:
@@ -11,7 +15,7 @@ export const ECard = () => {
   return (
     <>
       <div className="container ecard-container">
-        <Card className="bg-dark text-white p-3 mt-5">
+        <Card className="bg-dark text-white p-3 mt-3">
           <Card.Body>
             <Container>
               <Row>
@@ -29,14 +33,50 @@ export const ECard = () => {
                     </a>
                   </div>
                   <h3>Resume</h3>
-                    <p>Click image for Google Docs preview</p>
+                  <p>Click image for Google Docs preview</p>
                 </Col>
                 <Col>
-                <div className="contact-container">
-                  <Card.Text>
-                    ECard/Quick contact card with links to: Resume, Contact Me
-                    form, Social Media LinkTree
-                  </Card.Text>
+                  <div className="contact-container">
+                    <Row>
+                      <div className="contact-card">
+                      <Card.Text>
+                      Connect with me on any of my favorite platforms below:
+                      </Card.Text>
+                      </div>
+                    </Row>
+                    <div className="container link-tree">
+                    <Row>
+                      <div className="p-2">
+                      <a
+                        href="https://www.linkedin.com/in/tonydcoder/"
+                        target="_blank"
+                      >
+                        <img src={navIcon1} alt="linkedIn icon" />
+                      </a>
+                      <a
+                        href="https://www.facebook.com/tonydcoder"
+                        target="_blank"
+                      >
+                        <img src={navIcon2} alt="facebook icon" />
+                      </a>
+                      </div>
+                      <div className="p-2">
+                      <a
+                        href="https://www.instagram.com/tonydcoder5/"
+                        target="_blank"
+                      >
+                        <img src={navIcon3} alt="instagram icon" />
+                      </a>
+                      <a href="https://github.com/tonyDcoder5" target="_blank">
+                        <img
+                          src={navIcon4}
+                          id="ext-gh-icon"
+                          alt="github icon"
+                        />
+                      </a>
+                      </div>
+                    </Row>
+                    </div>
                   </div>
                 </Col>
               </Row>

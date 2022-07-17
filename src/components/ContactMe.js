@@ -13,7 +13,7 @@ TODO:
 
 export const ContactMe = () => {
   return (
-  <div className="contact contact-bx">
+  <div className="contact contact-bx" id="contact">
     <div className="container" id="heading">
       <h2>Contact Form</h2>
       </div>    

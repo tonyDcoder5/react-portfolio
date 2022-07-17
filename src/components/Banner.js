@@ -11,7 +11,7 @@ TODO:
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [eraseTitle, setEraseTitle] = useState(false);
-    const titleRotate = ["Web Designer", "Software Dev", "Learner", "Adventurer"];
+    const titleRotate = ["Web Designer", "Fullstack Developer", "Learner", "Adventurer"];
     const [type, setType] = useState('');
     const [delta, setDelta] = useState(250 - Math.random() * 100);
     const period = 400;
@@ -56,13 +56,16 @@ export const Banner = () => {
                         <span className="tagline">
                             Welcome to my Portfolio!
                         </span>
+                        <div>
                         <h1>{`My name is Anthony Rodriguez: \n `}
-                        <br />
-                        <span className="wrap">{type}</span>
+                        <span>{type}</span>
                         </h1>
+                        </div>
                     </Col>
-                    <Col xs={12} md={6} xl={5} >
+                    <Col xs={12} md={6} xl={5}>
+                        <div className="container mt-2">
                         <img src={bannerImg} alt="Header Img" />
+                        </div>
                     </Col>
                 </Row>
             </Container>

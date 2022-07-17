@@ -10,7 +10,7 @@ TODO:
 
 export const ProjectCard = ({project}) => { 
   return (
-    <div>
+    <div className="project-card">
       <Card style={{ width: "14em" }}>
         <Card.Img variant="top" src={project.img} />
         <Card.Body>

@@ -59,15 +59,15 @@ TODO:
 
 export const Projects = () => {
   return (
-    <>
-      <div className="container" id="heading">
+    <div className="container project" id="projects">
+      <div className="container project-heading">
         <h2>Project Board</h2>
       </div>
-      <div id="projects" className="container">
+      <div  className="container project-board">
       <CardGroup>
         {exProjectsArr.map((project)=> <ProjectCard project={project} /> )}
       </CardGroup>
     </div>
-    </>
+    </div>
   );
 };

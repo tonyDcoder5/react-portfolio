@@ -20,9 +20,11 @@ export const About = () => {
   };
 
   return (
-    <div className="container about about-bx">
+
       <Tab.Container defaultActiveKey="#aboutMe">
+            <div id="about" className="container about-bx">
         <Row>
+          <div className="container p-3 about-nav">
           <ListGroup>
             <ListGroup.Item action href="#aboutMe">
               About Me
@@ -34,6 +36,7 @@ export const About = () => {
               ECard
             </ListGroup.Item>
           </ListGroup>
+          </div>
         </Row>
         <Row>
           <Tab.Content>
@@ -48,9 +51,13 @@ export const About = () => {
             </Tab.Pane>
           </Tab.Content>
         </Row>
+        </div>
       </Tab.Container>
+  );
+};
 
-      {/* <Carousel
+
+     {/* <Carousel
         id="about about-banner"
         fade
         activeIndex={index}
@@ -72,6 +79,4 @@ export const About = () => {
           </div>
         </Carousel.Item>
       </Carousel> */}
-    </div>
-  );
-};
+ 
