@@ -5,7 +5,7 @@ export const AboutMe = () => {
   return (
 <>
 <div className="container about-container">
-  <Card>
+<Card className="bg-dark text-white p-3 mt-3">
     <Card.Body>
       <Card.Text>
         <h2 className="mt-2">About Me</h2>
