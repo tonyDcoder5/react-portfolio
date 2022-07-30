@@ -1,4 +1,4 @@
-import { Carousel } from "react-bootstrap";
+import { Card, Carousel } from "react-bootstrap";
 
 import { useState } from "react";
 
@@ -37,31 +37,32 @@ export const References = () => {
     setIndex(selectedIndex);
   };
 
-  const refArr = exRefArr.map((ref)=>{
-    return(
-        <Carousel.Item id="slide">
-        <div className="container">
+  const refArr = exRefArr.map((ref, index) => {
+    return (
+      <Carousel.Item id="slide" key={index}>
+        <div className="reference-card" key={index}>
           <h2>{ref.name}</h2>
           <h3>{ref.date}</h3>
           <p>{ref.message}</p>
-        </div>
+          </div>
       </Carousel.Item>
-    )
-  })
+    );
+  });
 
-  return (
-    <>
-    <div className="container" id="heading">
-      <h2>References</h2>
-      </div>
-    <Carousel
-      id="references-banner"
-      fade
-      activeIndex={index}
-      onSelect={handleSelect}
-    >
-    {refArr} 
-    </Carousel>
-    </>
+  return (      
+    <div className="container references">
+      <div className="reference-card">
+        <h2>Testimonials/References</h2>
+        <Carousel
+          id="references-banner"
+          fade
+          className="reference-slider"
+          activeIndex={index}
+          onSelect={handleSelect}
+        >
+          {refArr}
+        </Carousel>
+        </div>
+    </div>     
   );
 };

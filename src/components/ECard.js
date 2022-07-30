@@ -14,7 +14,11 @@ TODO:
 export const ECard = () => {
   const contactLinks = [
     { platform: "Email", icon: "../assets/img/nav-icon1.svg", link: "" },
-    { platform: "LinkedIn", icon: "../assets/img/nav-icon1.svg", link: "https://www.linkedin.com/in/tonydcoder/" },
+    {
+      platform: "LinkedIn",
+      icon: "../assets/img/nav-icon1.svg",
+      link: "https://www.linkedin.com/in/tonydcoder/",
+    },
     { platform: "GitHub", icon: "../assets/img/nav-icon1.svg", link: "" },
     { platform: "Facebook", icon: "../assets/img/nav-icon1.svg", link: "" },
     { platform: "Instagram", icon: "../assets/img/nav-icon1.svg", link: "" },
@@ -50,11 +54,14 @@ export const ECard = () => {
                     </p>
                   </div>
                   <div className="contact-card">
-                    <ul className="mt-4">
-                      {contactLinks.map((contact) => {
+                    <ul>
+                      {contactLinks.map((contact, index) => {
                         return (
-                          <li>
-                            <a href={contact.link}>{contact.platform}</a>
+                          <li key={index}>
+                            {/* <span><img src={} alt={`${contact.platform} img`} /></span> */}
+                            <a href={contact.link}>
+                            {contact.platform}
+                              </a>
                           </li>
                         );
                       })}

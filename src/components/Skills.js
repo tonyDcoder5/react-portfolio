@@ -1,6 +1,8 @@
 import { Card, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 
 /*
@@ -13,14 +15,26 @@ TODO:
 export const Skills = () => {
 
   const skills = [
-    "HTML", "CSS", "JavaScript",
-            "ReactJS",
-            "Node",
-            "Git",
-            "Postgres",
-            "Express",
-            "Knex",
+    {name: "HTML5", level: 5}, 
+    {name: "CSS3", level: 5},
+    {name: "Javascript", level: 6},
+    {name: "ReactJS", level: 6},
+    {name: "Node", level: 6},
+    {name: "Git", level: 7},
+    {name: "PostgreSQL", level: 6},
+    {name: "Express", level: 6},
+    {name: "Knex", level: 4},
+    {name: "REST APIs", level: 5},
   ]
+
+  let display = skills.map((skill, index)=>{
+    return (
+      <div key={index} style={{ width: 100, height: 100, marginLeft: "2em" }}>
+                <CircularProgressbar value={skill.level * 10} text={`Lvl ${skill.level}`} />;
+                  <h5>{skill.name}</h5>
+                </div>
+    )
+  })
 
   const responsive = {
     superLargeDesktop: {
@@ -44,7 +58,7 @@ export const Skills = () => {
   return (
     <>
     <div className="container skills-container">
-      <Card className="bg-dark text-white p-3 mt-5">  
+      <Card className="bg-dark text-white p-5 mt-5">  
         <Card.Body>
           <Row>
             <Col>
@@ -52,26 +66,8 @@ export const Skills = () => {
               <h2>
                 Skills
               </h2>
-              <p>
-                Sample Text
-              </p>
-              <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                <div className="skill-item">
-                  <img src={require("../assets/img/meter1.svg")} alt="skill-img" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={require("../assets/img/meter1.svg")}  alt="skill-img" />
-                  <h5>Marketing Consultation</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={require("../assets/img/meter1.svg")}  alt="skill-img" />
-                  <h5>Graphic Design</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={require("../assets/img/meter1.svg")}  alt="skill-img" />
-                  <h5>Leadership</h5>
-                </div>
+              <Carousel responsive={responsive} infinite={true} className="skill-slider p-5 mt-3">
+              {display}
               </Carousel>
             </div>
 
