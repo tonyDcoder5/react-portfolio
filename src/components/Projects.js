@@ -91,10 +91,14 @@ export const Projects = () => {
                 </ul>
                 <div className="d-flex flex-row justify-content-between">
                   <a href={arr[0].github} target="_blank">
+                    <button className="btn btn-secondary">
                     GitHub Repo
+                    </button>
                   </a>
                   <a href={arr[0].demo} target="_blank">
+                  <button className="btn btn-primary">
                     Demo Link
+                    </button>
                   </a>
                 </div>
               </section>
@@ -121,10 +125,14 @@ export const Projects = () => {
                 </ul>
                 <div className="d-flex flex-row justify-content-between">
                   <a href={arr[1].github} target="_blank">
+                    <button className="btn btn-secondary">
                     GitHub Repo
+                    </button>
                   </a>
                   <a href={arr[1].demo} target="_blank">
+                  <button className="btn btn-primary">
                     Demo Link
+                    </button>
                   </a>
                 </div>
               </section>
@@ -151,10 +159,14 @@ export const Projects = () => {
                 </ul>
                 <div className="d-flex flex-row justify-content-between">
                   <a href={arr[2].github} target="_blank">
+                  <button className="btn btn-secondary">
                     GitHub Repo
+                    </button>
                   </a>
                   <a href={arr[2].demo} target="_blank">
+                  <button className="btn btn-primary">
                     Demo Link
+                    </button>
                   </a>
                 </div>
               </section>
