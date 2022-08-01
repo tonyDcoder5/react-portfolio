@@ -440,21 +440,30 @@ ABOUT BANNER CSS
   margin-bottom: 5px;
   border-radius: 20px;
   display: flex;
+  justify-content: center;
   text-align: center;
 }
 
 .contact-card{
   display: flex;
+  justify-content: center;
+}
+
+.contact-circle .row {
+  margin: 20px;
+  text-align: center;
 }
 
 .contact-card ul{
   margin-top: 15%;
-  margin-left: 35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-card li{
   list-style: none;
-  text-align: center;
+  font-size: 1.5em;
   margin-bottom: 25%;
 }
 
@@ -492,7 +501,7 @@ ABOUT BANNER CSS
   text-align: center;
 }
 .project p {
-  color: #b8b8b8;
+  color: rgb(30, 30, 30);
   font-size: 18px;
   text-align: left;
   margin-top: 1em;
@@ -503,6 +512,7 @@ ABOUT BANNER CSS
 .project-board{
   text-align: center;
   margin: 25px;
+  color: rgb(30, 30, 30);
 }
 
 .project-card{
@@ -510,7 +520,7 @@ ABOUT BANNER CSS
 }
 
 .project-card li{
-  color: rgba(147, 147, 147, 0.758);
+  color: rgba(0, 0, 0, 0.758);
   list-style: none;
   text-align: left;
 }
@@ -518,6 +528,12 @@ ABOUT BANNER CSS
 .project-card img{
   width: 100%;
 }
+
+/* References CSS */
+#slide{
+  margin: 5%;
+}
+
 
 /************ Contact Css ************/
 .contact {
@@ -605,7 +621,12 @@ ABOUT BANNER CSS
 }
 
 .subscribe-input{
-  margin-left: 40%;
+  display: flex; 
+  justify-content: center;
+}
+
+.subscribe-box{
+  width: 5%;
 }
 
 /************ Footer Css ************/

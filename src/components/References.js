@@ -7,19 +7,22 @@ let exRefArr = [
     id: 1,
     name: "Kinsey Grace",
     message: "example reference message",
-    date: Date.now(),
+    title: 'Enterprise Infrastructure Engineer at Github',
+    relation: 'Mentor at Thinkful',
   },
   {
     id: 2,
     name: "Jenny Allar",
     message: "example reference message",
-    date: Date.now(),
+    title: 'Senior Software Engineer',
+    relation: 'Professional Mentor',
   },
   {
     id: 3,
     name: "Tom Riddle",
     message: "example reference message",
-    date: Date.now(),
+    title: 'He who shall not be named',
+    relation: 'Imagination?',
   },
 ];
 
@@ -42,7 +45,8 @@ export const References = () => {
       <Carousel.Item id="slide" key={index}>
         <div className="reference-card" key={index}>
           <h2>{ref.name}</h2>
-          <h3>{ref.date}</h3>
+          <h4>{ref.title}</h4>          
+          <p>{ref.relation}</p>
           <p>{ref.message}</p>
           </div>
       </Carousel.Item>

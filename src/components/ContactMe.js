@@ -50,12 +50,13 @@ export const ContactMe = () => {
 
         <Form.Group className="mb-3 subscribe-input" id="formGridCheckbox">
           <div className='row'>
+          
+          <div className='col-8'>
+            <label>Check to subscribe for updates</label>
+          </div>
           <div className='col-1'>
           <Form.Check 
            type="checkbox" />
-          </div>
-          <div className='col-4'>
-            Check to subscribe for updates
           </div>
           </div>
         </Form.Group>

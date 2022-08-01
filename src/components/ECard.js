@@ -49,9 +49,9 @@ export const ECard = () => {
               <Col>
                 <Row>
                   <div className="contact-container">
-                    <p>
+                    <h3>
                       Connect with me on any of your favorite platforms below:
-                    </p>
+                    </h3>
                   </div>
                   <div className="contact-card">
                     <ul>
