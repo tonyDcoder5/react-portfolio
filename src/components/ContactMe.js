@@ -1,68 +1,76 @@
-import {Form, Row, Col, Button} from 'react-bootstrap';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { Form, Row, Col, Button } from "react-bootstrap";
 
-/*
-TODO:
-  - adjust spacing rules and text-font-alignment-colors
-    - center text
-    - center button
-    - turn form into a card on the side
-  - add border rules to make more aesthetically pleasing
-  - add a carousel of recent posts/images
-
-*/
 
 export const ContactMe = () => {
+
+  const initialForm = {
+    user_name: '',
+    user_email: '',
+    message: '',
+  }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_u29rgkn",
+        "template_appix6f",
+        form.current,
+        "G-ApjuZDYtqcWDa-9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-  <div className="contact contact-bx" id="contact">
-    <div className="container" id="heading">
-      <h2>Contact Form</h2>
-      </div>    
-      <Form>
+    <div className="contact contact-bx" id="contact">
+      <div className="container" id="heading">
+        <h2>Contact Form</h2>
+      </div>
+
+      <Form ref={form} onSubmit={sendEmail}>
         <Row>
-            <h2>Let's Connect!</h2>
+          <h2>Let's Connect!</h2>
         </Row>
-      <Row className="mb-3">
-          <Form.Group as={Col} controlId="formGridFirstName">
-            <Form.Label>First Name</Form.Label>
-            <Form.Control type="firstName" placeholder="Enter first name" />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridLastName">
-            <Form.Label>Last Name</Form.Label>
-            <Form.Control type="lastName" placeholder="Enter last name" />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridCompany">
-            <Form.Label>Company</Form.Label>
-            <Form.Control type="company" placeholder="Enter company name" />
+        <Row className="mb-3">
+          <Form.Group as={Col} controlId="user_name">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="name"
+              placeholder="Enter name"
+              name="user_name"
+            />
           </Form.Group>
         </Row>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control
+              type="email"
+              name="user_email"
+              placeholder="Enter email"
+            />
           </Form.Group>
         </Row>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridMessage">
             <Form.Label>Message</Form.Label>
-            <Form.Control />
+            <Form.Control type="text" name="message" />
           </Form.Group>
         </Row>
-
-        <Form.Group className="mb-3 subscribe-input" id="formGridCheckbox">
-          <div className='row'>
-          
-          <div className='col-8'>
-            <label>Check to subscribe for updates</label>
-          </div>
-          <div className='col-1'>
-          <Form.Check 
-           type="checkbox" />
-          </div>
-          </div>
-        </Form.Group>
-
         <Button variant="primary" type="submit">
-          Submit
+          Send
         </Button>
       </Form>
     </div>

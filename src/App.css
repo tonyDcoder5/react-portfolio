@@ -383,6 +383,7 @@ ABOUT BANNER CSS
 .about-container{
   padding: auto;
   margin: 50px 20px 50px 20px;
+  font-size: 1.5em;
 }
 
 .skills-container{
@@ -391,17 +392,19 @@ ABOUT BANNER CSS
   
 }
 
+/* References CSS */
+
+
 .references{
   margin: 5%;  
-  padding: 15%;
+  padding: 10%;
   border-radius: 25%;
   background-color: rgba(33, 33, 33, 0.641);
 
 }
 
 .reference-card{
-  margin: auto;
-  padding: 5%;
+  padding: 10%;
 
 }
 
@@ -424,7 +427,7 @@ ABOUT BANNER CSS
 }
 
 .resume-container a:hover{
-  transform: scale(1.75);
+  transform: scale(1.25);
 }
 
 .resume-img{
@@ -529,12 +532,6 @@ ABOUT BANNER CSS
   width: 100%;
 }
 
-/* References CSS */
-#slide{
-  margin: 5%;
-}
-
-
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
@@ -607,7 +604,7 @@ ABOUT BANNER CSS
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #1212126c;
   width: 0;
   height: 100%;
   position: absolute;
@@ -631,12 +628,12 @@ ABOUT BANNER CSS
 
 /************ Footer Css ************/
 .footer {
-
+  
 }
 
 .footer p {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 200;
+  font-size: 8px;
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;

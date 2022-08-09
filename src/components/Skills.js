@@ -67,7 +67,7 @@ export const Skills = () => {
                 Skills
               </h2>
               <Carousel responsive={responsive} infinite={true} className="skill-slider p-5 mt-3">
-              {skills ? display : "Loading..."}
+              {display}
               </Carousel>
             </div>
 

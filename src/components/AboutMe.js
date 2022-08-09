@@ -12,18 +12,15 @@ export const AboutMe = () => {
               transitioned between various industries looking for my place in
               the world. At each position I found myself analyzing the
               technology used, imagining ways I could improve the way the
-              technology can be used if I had the skill.
+              business systems can be used if I had the skills.
             </Card.Text>
             <Card.Img
               className="p-3"
               src={require("../assets/img/personal-pic.png")}
             />
             <Card.Text className="mt-3 p-3">
-              And so I took on Thinkful's Engineering Immersion bootcamp to hone
-              the skills I had been introduced to in my undergraduate
-              coursework. With the skills I have built over the last year, I
-              hope to continue improving my skills to provide the best service I
-              can as a growing Web Developer.
+              And so I took on Thinkful's Engineering Immersion bootcamp to hone these skills I had been introduced to in my undergraduate
+              coursework. With the mastery I have built over the last year, I hope to continue improving my craft while providing the best service I can as a growing Web Developer.
             </Card.Text>
           </Card.Body>
         </Card>

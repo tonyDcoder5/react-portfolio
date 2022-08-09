@@ -2,28 +2,29 @@ import { Card, Carousel } from "react-bootstrap";
 
 import { useState } from "react";
 
+
 let exRefArr = [
   {
     id: 1,
-    name: "Kinsey Grace",
-    message: "example reference message",
-    title: 'Enterprise Infrastructure Engineer at Github',
+    name: "Kinsey Durham Grace",
+    message: "Tony's amazing work ethic and unique creativity make him an unstoppable developer. His excitement and willingness to learn is refreshing. He would be a great asset on any team.",
+    title: 'Infrastructure Engineer at Github',
     relation: 'Mentor at Thinkful',
   },
-  {
-    id: 2,
-    name: "Jenny Allar",
-    message: "example reference message",
-    title: 'Senior Software Engineer',
-    relation: 'Professional Mentor',
-  },
-  {
-    id: 3,
-    name: "Tom Riddle",
-    message: "example reference message",
-    title: 'He who shall not be named',
-    relation: 'Imagination?',
-  },
+  // {
+  //   id: 2,
+  //   name: "Jenny Allar",
+  //   message: "example reference message",
+  //   title: 'Senior Software Engineer',
+  //   relation: 'Professional Mentor',
+  // },
+  // {
+  //   id: 3,
+  //   name: "Tom Riddle",
+  //   message: "example reference message",
+  //   title: 'He who shall not be named',
+  //   relation: 'Imagination?',
+  // },
 ];
 
 /*

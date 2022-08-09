@@ -43,7 +43,7 @@ const projects = arr.map((project, index) => {
   return (
     <Accordion.Item key={index} eventKey={index} className="project-card">
       <Accordion.Header>{project.title}</Accordion.Header>
-      <Accordion.Body>
+      <Accordion.Body key={project.id}>
         <section>
           <img src={project.img} alt={`${project.title} preview image`} />
           <p className="m-4">{project.desc}</p>
@@ -85,8 +85,8 @@ export const Projects = () => {
                 <p className="m-4">{arr[0].desc}</p>
                 <p className="m-4">Skills Used:</p>
                 <ul className="ml-4">
-                  {arr[0].skills.map((skill)=>{
-                    return <li>{skill}</li>
+                  {arr[0].skills.map((skill, index)=>{
+                    return <li key={index}>{skill}</li>
                   })}
                 </ul>
                 <div className="d-flex flex-row justify-content-between">
@@ -119,8 +119,8 @@ export const Projects = () => {
                  <p className="m-4">{arr[1].desc}</p>
                 <p className="m-4">Skills Used:</p>
                 <ul className="ml-4">
-                  {arr[1].skills.map((skill)=>{
-                    return <li>{skill}</li>
+                  {arr[1].skills.map((skill, index)=>{
+                    return <li key={index}>{skill}</li>
                   })}
                 </ul>
                 <div className="d-flex flex-row justify-content-between">
@@ -153,8 +153,8 @@ export const Projects = () => {
                  <p className="m-4">{arr[2].desc}</p>
                 <p className="m-4">Skills Used:</p>
                 <ul className="ml-4">
-                  {arr[2].skills.map((skill)=>{
-                    return <li>{skill}</li>
+                  {arr[2].skills.map((skill, index)=>{
+                    return <li key={index}>{skill}</li>
                   })}
                 </ul>
                 <div className="d-flex flex-row justify-content-between">
