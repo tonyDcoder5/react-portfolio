@@ -1,14 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
 
-/*
-TODO:
-  - adjust spacing rules between cards
-  - add spacing around component 
-  - look into animated card carousel? 
-  - import projectsArr as a table 
-*/
-
 let arr = [
   {
     id: 1,
@@ -39,27 +31,27 @@ let arr = [
   },
 ];
 
-const projects = arr.map((project, index) => {
-  return (
-    <Accordion.Item key={index} eventKey={index} className="project-card">
-      <Accordion.Header>{project.title}</Accordion.Header>
-      <Accordion.Body key={project.id}>
-        <section>
-          <img src={project.img} alt={`${project.title} preview image`} />
-          <p className="m-4">{project.desc}</p>
-          <div className="d-flex flex-row justify-content-between">
-            <a href={project.github} target="_blank">
-              GitHub Repo
-            </a>
-            <a href={project.demo} target="_blank">
-              Demo Link
-            </a>
-          </div>
-        </section>
-      </Accordion.Body>
-    </Accordion.Item>
-  );
-});
+// const projects = arr.map((project, index) => {
+//   return (
+//     <Accordion.Item key={index} eventKey={index} className="project-card">
+//       <Accordion.Header>{project.title}</Accordion.Header>
+//       <Accordion.Body key={project.id}>
+//         <section>
+//           <img src={project.img} alt={`${project.title} preview image`} />
+//           <p className="m-4">{project.desc}</p>
+//           <div className="d-flex flex-row justify-content-between">
+//             <a href={project.github} target="_blank">
+//               GitHub Repo
+//             </a>
+//             <a href={project.demo} target="_blank">
+//               Demo Link
+//             </a>
+//           </div>
+//         </section>
+//       </Accordion.Body>
+//     </Accordion.Item>
+//   );
+// });
 
 export const Projects = () => {
   return (

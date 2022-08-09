@@ -3,7 +3,7 @@ import { Card, Carousel } from "react-bootstrap";
 import { useState } from "react";
 
 
-let exRefArr = [
+let RefArr = [
   {
     id: 1,
     name: "Kinsey Durham Grace",
@@ -11,28 +11,7 @@ let exRefArr = [
     title: 'Infrastructure Engineer at Github',
     relation: 'Mentor at Thinkful',
   },
-  // {
-  //   id: 2,
-  //   name: "Jenny Allar",
-  //   message: "example reference message",
-  //   title: 'Senior Software Engineer',
-  //   relation: 'Professional Mentor',
-  // },
-  // {
-  //   id: 3,
-  //   name: "Tom Riddle",
-  //   message: "example reference message",
-  //   title: 'He who shall not be named',
-  //   relation: 'Imagination?',
-  // },
 ];
-
-/*
-TODO:
-  - adjust spacing, border, and text rules for more aesthetic look
-  - add content from an int datatable refArr
-
-*/
 
 export const References = () => {
   const [index, setIndex] = useState(0);

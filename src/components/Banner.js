@@ -2,11 +2,6 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import bannerImg from '../assets/img/header-img.png';
 
-/*
-TODO:
-    - fix delete bug that causes page to shift whenever text is deleted
-    - find better banner img
-*/
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);

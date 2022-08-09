@@ -56,27 +56,4 @@ export const About = () => {
   );
 };
 
-
-     {/* <Carousel
-        id="about about-banner"
-        fade
-        activeIndex={index}
-        onSelect={handleSelect}
-      >
-        <Carousel.Item id="slide">
-          <div>
-            <AboutMe />
-          </div>
-        </Carousel.Item>
-        <Carousel.Item id="slide">
-          <div>
-            <Skills />
-          </div>
-        </Carousel.Item>
-        <Carousel.Item id="slide">
-          <div >
-            <ECard />
-          </div>
-        </Carousel.Item>
-      </Carousel> */}
  

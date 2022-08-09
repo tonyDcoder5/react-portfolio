@@ -5,13 +5,6 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 
-/*
-TODO:
-- create graph visual with dev skills charted 
-- look into animating the data? 
-
-*/
-
 export const Skills = () => {
 
   const skills = [
