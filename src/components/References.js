@@ -3,7 +3,7 @@ import { Card, Carousel } from "react-bootstrap";
 import { useState } from "react";
 
 
-let RefArr = [
+let arr = [
   {
     id: 1,
     name: "Kinsey Durham Grace",
@@ -20,7 +20,7 @@ export const References = () => {
     setIndex(selectedIndex);
   };
 
-  const refArr = exRefArr.map((ref, index) => {
+  const refArr = arr.map((ref, index) => {
     return (
       <Carousel.Item id="slide" key={index}>
         <div className="reference-card" key={index}>
