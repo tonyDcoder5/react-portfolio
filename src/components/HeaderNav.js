@@ -6,12 +6,6 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/nav-icon4.png';
 
-/*
-TODO:
-  - CHANGE GITHUB ICON COLOR AND ADD CSS RULES FOR EFFECTS
-  - adjust css spacing and responsive behavior for smoother effects
-*/
-
 export const HeaderNav = () => {
 
   const [activeLink, setActiveLink] = useState('home');

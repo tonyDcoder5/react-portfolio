@@ -1,7 +1,7 @@
 import { Carousel } from "react-bootstrap";
 import { AboutMe } from "./AboutMe";
 import { Skills } from "./Skills";
-import { ECard } from "./ECard";
+import { Resume } from "./Resume";
 import { useState } from "react";
 import { Tab, Row, Col, ListGroup } from "react-bootstrap";
 
@@ -32,8 +32,8 @@ export const About = () => {
             <ListGroup.Item action href="#skills">
               Skills
             </ListGroup.Item>
-            <ListGroup.Item action href="#eCard">
-              ECard
+            <ListGroup.Item action href="#resume">
+              Resume
             </ListGroup.Item>
           </ListGroup>
           </div>
@@ -46,8 +46,8 @@ export const About = () => {
             <Tab.Pane eventKey="#skills">
               <Skills />
             </Tab.Pane>
-            <Tab.Pane eventKey="#eCard">
-              <ECard />
+            <Tab.Pane eventKey="#resume">
+              <Resume />
             </Tab.Pane>
           </Tab.Content>
         </Row>

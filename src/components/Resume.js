@@ -1,6 +1,6 @@
 import { Card, Col, Row } from "react-bootstrap";
 
-export const ECard = () => {
+export const Resume = () => {
 
   return (
     <>
