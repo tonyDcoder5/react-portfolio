@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Welcome to my Portfolio Repo!
+
+## About this project
+Here you can find some of my most recent projects from completing Thinkful's Engineering Immersion program this past year. The contact form at the bottom is connected to my portfolio email using EmailJs. I also have my social media handles on the navbar as well as my online resume linked to the page. If you have any constructive feedback please feel free to reach out! Thank you for stopping by!
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
