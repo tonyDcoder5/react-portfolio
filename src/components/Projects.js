@@ -1,7 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
 
-
 let ongoingArr = [
   {
     id: 0,
@@ -73,36 +72,36 @@ let completedArr = [
 const completeProjects = completedArr.map((project, index) => {
   return (
     <>
-    <Accordion.Item
-      key={project.id}
-      eventKey={project.id}
-      className="project-card"
-    >
-      <Accordion.Header>{project.title}</Accordion.Header>
-      <Accordion.Body>
-        <section>
-          <img
-            src={`${project.img}`}
-            alt={`${project.title} preview image`}
-          />
-          <p className="m-4">{project.desc}</p>
-          <p className="m-4">Skills Used:</p>
-          <ul className="ml-4">
-            {project.skills.map((skill, index) => {
-              return <li key={index}>{skill}</li>;
-            })}
-          </ul>
-          <div className="d-flex flex-row justify-content-between">
-            <a href={project.github} target="_blank">
-              <button className="btn btn-secondary">GitHub Repo</button>
-            </a>
-            <a href={project.demo} target="_blank">
-              <button className="btn btn-primary">Demo Link</button>
-            </a>
-          </div>
-        </section>
-      </Accordion.Body>
-    </Accordion.Item>
+      <Accordion.Item
+        key={project.id}
+        eventKey={project.id}
+        className="project-card"
+      >
+        <Accordion.Header>{project.title}</Accordion.Header>
+        <Accordion.Body>
+          <section>
+            <img
+              src={`${project.img}`}
+              alt={`${project.title} preview image`}
+            />
+            <p className="m-4">{project.desc}</p>
+            <p className="m-4">Skills Used:</p>
+            <ul className="ml-4">
+              {project.skills.map((skill, index) => {
+                return <li key={index}>{skill}</li>;
+              })}
+            </ul>
+            <div className="d-flex flex-row justify-content-between">
+              <a href={project.github} target="_blank">
+                <button className="btn btn-secondary">GitHub Repo</button>
+              </a>
+              <a href={project.demo} target="_blank">
+                <button className="btn btn-primary">Demo Link</button>
+              </a>
+            </div>
+          </section>
+        </Accordion.Body>
+      </Accordion.Item>
     </>
   );
 });
@@ -110,36 +109,36 @@ const completeProjects = completedArr.map((project, index) => {
 const ongoingProjects = ongoingArr.map((project, index) => {
   return (
     <>
-    <Accordion.Item
-      key={project.id}
-      eventKey={project.id}
-      className="project-card"
-    >
-      <Accordion.Header>{project.title}</Accordion.Header>
-      <Accordion.Body>
-        <section>
-          <img
-            src={`${project.img}`}
-            alt={`${project.title} preview image`}
-          />
-          <p className="m-4">{project.desc}</p>
-          <p className="m-4">Skills Used:</p>
-          <ul className="ml-4">
-            {project.skills.map((skill, index) => {
-              return <li key={index}>{skill}</li>;
-            })}
-          </ul>
-          <div className="d-flex flex-row justify-content-between">
-            <a href={project.github} target="_blank">
-              <button className="btn btn-secondary">GitHub Repo</button>
-            </a>
-            <a href={project.demo} target="_blank">
-              <button className="btn btn-primary">Demo Link</button>
-            </a>
-          </div>
-        </section>
-      </Accordion.Body>
-    </Accordion.Item>
+      <Accordion.Item
+        key={project.id}
+        eventKey={project.id}
+        className="project-card"
+      >
+        <Accordion.Header>{project.title}</Accordion.Header>
+        <Accordion.Body>
+          <section>
+            <img
+              src={`${project.img}`}
+              alt={`${project.title} preview image`}
+            />
+            <p className="m-4">{project.desc}</p>
+            <p className="m-4">Skills Used:</p>
+            <ul className="ml-4">
+              {project.skills.map((skill, index) => {
+                return <li key={index}>{skill}</li>;
+              })}
+            </ul>
+            <div className="d-flex flex-row justify-content-between">
+              <a href={project.github} target="_blank">
+                <button className="btn btn-secondary">GitHub Repo</button>
+              </a>
+              <a href={project.demo} target="_blank">
+                <button className="btn btn-primary">Demo Link</button>
+              </a>
+            </div>
+          </section>
+        </Accordion.Body>
+      </Accordion.Item>
     </>
   );
 });
@@ -151,19 +150,16 @@ export const Projects = () => {
         <h2>Project Board</h2>
       </div>
       <div className="container project-board">
-         <Accordion defaultActiveKey="0" flush>
+        <Accordion defaultActiveKey="0" flush>
           <div className="mb-5">
-        <h3>Ongoing</h3>
-       
-        {ongoingProjects}
-     
-        </div>
-        <div>
-        <h3>Completed</h3>
-          {completeProjects}
-        </div>        
+            <h3>Ongoing</h3>
+            {ongoingProjects}
+          </div>
+          <div>
+            <h3>Completed</h3>
+            {completeProjects}
+          </div>
         </Accordion>
-
       </div>
     </div>
   );
