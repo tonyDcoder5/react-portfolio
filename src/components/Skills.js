@@ -1,4 +1,4 @@
-import { Card, Row, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { CircularProgressbar } from 'react-circular-progressbar';
@@ -39,51 +39,27 @@ export const Skills = () => {
       items:3
     },
     tabley: {
-      breakpoint: {max: 1024, min:464},
+      breakpoint: {max: 1024, min:600},
       items:2
     },
     mobile: {
-      breakpoint: {max: 464, min:0},
+      breakpoint: {max: 600, min:0},
       items:1
     },
   }
 
   return (
-    <>
     <div className="container skills-container">
       <Card className="bg-dark text-white p-5 mt-5">  
         <Card.Body>
-          <Row>
-            <Col>
-            <div>
               <h2>
-                Skills
+                Skills 
               </h2>
               <Carousel responsive={responsive} infinite={true} className="skill-slider p-5 mt-3">
               {display}
               </Carousel>
-            </div>
-
-            </Col>
-          </Row>
         </Card.Body>
       </Card>   
       </div>
-    </>
   );
 };
-
-/*
-          <Card.Text> 
-            <h2>Skills</h2>
-              <p>Graph or visual layout of my skills and level of expertise/mastery for each:
-              </p>
-
-
-
-
-              {skills.map((skill)=>{
-                return <p>{skill}</p>
-              })}
-          </Card.Text>
-*/

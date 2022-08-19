@@ -47,6 +47,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  zoom: 75%;
 }
 
 body {
@@ -515,7 +516,7 @@ ABOUT BANNER CSS
 .project-board{
   text-align: center;
   margin: 25px;
-  color: rgb(30, 30, 30);
+  color: rgb(245, 245, 245);
 }
 
 .project-card{
