@@ -5,7 +5,7 @@ let ongoingArr = [
   {
     id: 0,
     title: "GolfYankeeSix Webpage",
-    img: require("../assets/img/GYS-homepage-v1.png"),
+    img: require("../assets/img/GYS-homepage.png"),
     desc: "A volunteer project for a Veteran Mental Health organization who needed a webpage built for their marketing efforts. I am using ReactJS and Bootstrap to begin the initial mockup of the UI layout before connecting a backend database with data to populate the frontend.",
     skills: [
       "HTML",
