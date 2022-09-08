@@ -5,8 +5,8 @@ let ongoingArr = [
   {
     id: 0,
     title: "GolfYankeeSix Webpage",
-    img: require("../assets/img/GYS-homepage.png"),
-    desc: "A volunteer project for a Veteran Mental Health organization who needed a webpage built for their marketing efforts. I am using ReactJS and Bootstrap to begin the initial mockup of the UI layout before connecting a backend database with data to populate the frontend.",
+    img: require("../assets/img/GYS_v5homepage.png"),
+    desc: "A volunteer project for a Veteran Mental Health organization who needed a webpage built for their marketing efforts. I am using ReactJS and Bootstrap for the front end build, and NodeJS with Express for the back end build. I've deployed the full stack to Heroku for now, as I work on deploying a copy to Firebase as a way to learn this new skill and provide further scalability for the organization's efforts.",
     skills: [
       "HTML",
       "CSS ",
@@ -18,7 +18,7 @@ let ongoingArr = [
       "Github",
       "Git",
     ],
-    demo: "#",
+    demo: "https://gys-frontend.herokuapp.com/home",
     github: "https://github.com/tonyDcoder5/GYS_monorepo",
   },
 ];
