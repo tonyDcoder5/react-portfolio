@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.32abe438.css",
-    "main.js": "/react-portfolio/static/js/main.ee075f06.js",
+    "main.js": "/react-portfolio/static/js/main.5f79b332.js",
     "static/js/787.37faa4c4.chunk.js": "/react-portfolio/static/js/787.37faa4c4.chunk.js",
-    "static/media/GYS-homepage-v1.png": "/react-portfolio/static/media/GYS-homepage-v1.245f426fcdf4b0c21ac0.png",
     "static/media/banner-bg.png": "/react-portfolio/static/media/banner-bg.ebd8801234a814a86bdc.png",
     "static/media/personal-pic.png": "/react-portfolio/static/media/personal-pic.be7aedc649f477d61d25.png",
+    "static/media/GYS_v5homepage.png": "/react-portfolio/static/media/GYS_v5homepage.074ebb9c9f8025ce53e5.png",
     "static/media/resume-preview.png": "/react-portfolio/static/media/resume-preview.afbaed4cc498cdf47a1e.png",
     "static/media/weLoveMovies_preview.png": "/react-portfolio/static/media/weLoveMovies_preview.b4d3aac348c150a469d4.png",
     "static/media/decoder_preview.png": "/react-portfolio/static/media/decoder_preview.bddd05561d3df89021c7.png",
@@ -24,11 +24,11 @@
     "static/media/nav-icon1.svg": "/react-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/react-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.32abe438.css.map": "/react-portfolio/static/css/main.32abe438.css.map",
-    "main.ee075f06.js.map": "/react-portfolio/static/js/main.ee075f06.js.map",
+    "main.5f79b332.js.map": "/react-portfolio/static/js/main.5f79b332.js.map",
     "787.37faa4c4.chunk.js.map": "/react-portfolio/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32abe438.css",
-    "static/js/main.ee075f06.js"
+    "static/js/main.5f79b332.js"
   ]
 }
