@@ -23,7 +23,7 @@ let completedArr = [
       "Git",
       "Heroku",
     ],
-    demo: "https://golfyankeesix.com/",
+    demo: "https://www.golfyankeesix.com/",
     github: "https://github.com/tonyDcoder5/GYS_webpage_backup",
   },
   {
